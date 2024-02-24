@@ -1,8 +1,13 @@
 *[accesskey]::after {
-    content: ' ('attr(accesskey)')';
+    content: ' (' attr(accesskey) ')';
     text-transform: uppercase;
 }
 
-#home[accesskey]::after {
+/* Contao Logo */
+#home[accesskey]::after,
+    /* Symfony Debugbar close */
+button[id^='sfToolbarMiniToggler']::after,
+    /*Symfony debugbar open */
+button[id^='sfToolbarHideButton']::after {
     content: none;
 }
