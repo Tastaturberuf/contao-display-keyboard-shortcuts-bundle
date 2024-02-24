@@ -1,6 +1,6 @@
 *[accesskey]::after {
     background-color: lightgrey;
-    border:1px solid darkgray;
+    border: 1px solid darkgray;
     color: black;
     margin-left: .25em;
     content: attr(accesskey);
@@ -10,4 +10,13 @@
     border-radius: 4px;
     min-width: 18px;
     display: inline-block;
+}
+
+/* Contao Logo */
+#home[accesskey]::after,
+    /* Symfony Debugbar close */
+button[id^='sfToolbarMiniToggler']::after,
+    /*Symfony debugbar open */
+button[id^='sfToolbarHideButton']::after {
+    content: none;
 }
