@@ -1,0 +1,35 @@
+{
+    "name": "tastaturberuf/contao-display-keyboard-shortcuts-bundle",
+    "description": "Show keyboard shortcuts in the Contao backend.",
+    "license": "MIT",
+    "keywords": [
+        "keyboard",
+        "shortcut"
+    ],
+    "type": "contao-bundle",
+    "homepage": "https://github.com/tastaturberuf/contao-display-keyboard-shortcuts-bundle",
+    "authors": [
+        {
+            "name": "Tastaturberuf",
+            "homepage": "https://tastaturberuf.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Daniel Jahnsmüller",
+            "homepage": "https://github.com/Tastaturberuf",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "contao/core-bundle": "^4.13 || ^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tastaturberuf\\ContaoDisplayKeyboardShortcutsBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Tastaturberuf\\ContaoDisplayKeyboardShortcutsBundle\\ContaoManager\\Plugin"
+    }
+}

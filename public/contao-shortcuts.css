@@ -1,0 +1,8 @@
+*[accesskey]::after {
+    content: ' ('attr(accesskey)')';
+    text-transform: uppercase;
+}
+
+#home[accesskey]::after {
+    content: none;
+}
